@@ -37,7 +37,7 @@ function Header() {
           <input
             className="bg-gray-50 block w-full pl-10 sm:text-sm
             border-2 border-gray-500 focus:ring-black focus:border-black 
-      rounded-md"
+      rounded-md px-5 py-1"
             type="text"
             placeholder="Search"
           />
