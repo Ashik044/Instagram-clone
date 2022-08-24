@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://cdn.dribbble.com/users/644659/screenshots/1920053/media/189931803af24fea969fe9d0b6631431.gif" alt="logo" width="300" height="auto" />
+  <img src="https://cdn.dribbble.com/users/320114/screenshots/2575134/media/5b7f22deeb1522d5cb93fc864108bf25.gif" alt="logo" width="300" height="auto" />
   <h1>Instagram clone</h1>
   
   <p>
