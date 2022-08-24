@@ -242,7 +242,7 @@ Distributed under the no License. See LICENSE.txt for more information.
 <!-- Contact -->
 ## :handshake: Contact
 
-Your Name - rezaashik044@gmail.com
+Your Gmail - rezaashik044@gmail.com
 
 Project Link: [https://github.com/Ashik044/Instagram-clone](https://github.com/Ashik044/Instagram-clone)
 
