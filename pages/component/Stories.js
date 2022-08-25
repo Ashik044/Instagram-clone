@@ -35,7 +35,7 @@ const Stories = () => {
   }, []);
 
   return (
-    <div className="flex space-x-2 bg-white mt-5 mb-5 border-gray-300 border rounded-xl overflow-x-scroll p-6 shadow w-[28rem] scrollbar-hide">
+    <div className="flex space-x-2 bg-white mt-5 mb-5 border-gray-300 border rounded-xl overflow-x-scroll p-6 shadow w-[28rem] scrollbar-hide text-gray-600">
       {suggestions.map((profile, index) => (
         <Story key={index} img={profile.avatar} username={profile.username} />
       ))}

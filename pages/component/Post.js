@@ -36,9 +36,9 @@ function Post({ id, username, userImg, img, caption }) {
       </div>
 
       {/* caption */}
-      <p className="px-5 pt-4 pb-4 truncate">
+      <p className="px-5 pt-4 pb-4 truncate ">
         <span className="font-bold mr-1">{username} </span>
-        {caption}
+        <span className="text-gray-500"> {caption}</span>
       </p>
 
       {/* comments */}
@@ -49,9 +49,9 @@ function Post({ id, username, userImg, img, caption }) {
         <input
           type="text"
           placeholder="Add a comment..."
-          className="border-none flex-1 focus:ring-0 outline-none"
+          className="border-none flex-1 focus:ring-0 outline-none px-2 text-gray-500"
         />
-        <button className="font-bold">Post</button>
+        <button className="font-bold text-blue-400">Post</button>
       </form>
     </div>
   );
