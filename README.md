@@ -74,7 +74,7 @@
 ### :camera: Screenshots
 
 <div align="center"> 
-  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
+  <img src="https://github.com/Ashik044/Instagram-clone/blob/main/public/Screenshot.png?raw=true" alt="screenshot" />
 </div>
 
 
