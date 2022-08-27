@@ -4,15 +4,28 @@
 
 @layer components {
   .navBtn {
-    @apply hidden h-6 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out;
+    @apply hidden h-6 md:inline-flex
+    cursor-pointer hover:scale-125
+    transition-all duration-150 ease-out;
   }
+  .btn {
+    @apply h-7 hover:scale-125 cursor-pointer transition-all duration-150 ease-out;
+  }
+}
 
-  .shadow {
-    @apply-webkit-box-shadow: 0.5px 0.5px 6.5px 4px #ddd -moz-box-shadow: 0.5px 0.5px 6.5px 4px #ddd;
-    box-shadow: 0.5px 0.5px 6.5px 4px #ddd;
-  }
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
 
-  .btn{
-    @apply w-7 hover:scale-125 cursor-pointer transition-all duration-150 ease-out;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
 }
