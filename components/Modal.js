@@ -41,7 +41,7 @@ function Modal() {
       timestamp: serverTimestamp(),
     });
 
-    //console.log("🔥🚀🔥🚀", docRef.id);
+    // console.log("🔥🚀🔥🚀", docRef.id);
 
     const imageRef = ref(storage, `posts/${docRef.id}/image`);
 

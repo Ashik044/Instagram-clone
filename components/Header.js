@@ -20,6 +20,7 @@ function Header() {
   const router = useRouter();
 
   const { data: session } = useSession();
+  console.log(session);
 
   return (
     <div className="shadow-sm border-b big-white sticky top-0 z-58">

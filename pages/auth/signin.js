@@ -5,9 +5,9 @@ import Header from "../../components/Header";
 
 function signIn({ providers }) {
   return (
-    <>
+    <div className="w-full h-screen">
       <Header />
-      <div className="flex flex-col items-center justify-center min-h-screen py-2 -m-56 px-14 text-center pt-60">
+      <div className="flex flex-col items-center justify-center px-14 text-center scrollbar-hide">
         <img
           className="w-70"
           src="https://www.pngmart.com/files/13/Instagram-Logo-PNG-Transparent.png"
@@ -31,7 +31,7 @@ function signIn({ providers }) {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

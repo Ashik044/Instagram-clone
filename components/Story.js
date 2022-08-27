@@ -3,7 +3,7 @@ import React from "react";
 function Story({ img, username }) {
   //console.log(username, "🚀🚀");
   return (
-    <div>
+    <div className="">
       <img
         className="h-14 w-14 rounded-full p-[1.5px] border-red-500 border-2
         cursor-pointer object-contain hover:scale-110 
