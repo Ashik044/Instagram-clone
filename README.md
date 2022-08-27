@@ -42,7 +42,14 @@
 
 <!-- Table of Contents -->
 # :notebook_with_decorative_cover: Table of Contents
-
+ <details>
+  <ul>
+    <li> * [Screenshots](#camera-screenshots) </li>
+    <li> * [Tech Stack](#space_invader-tech-stack)</li>
+    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
+    <li><a href="https://next-auth.js.org/">NextAuth.js</a></li>
+  </ul>
+</details>
 - [About the Project](#star2-about-the-project)
   * [Screenshots](#camera-screenshots)
   * [Tech Stack](#space_invader-tech-stack)
