@@ -7,6 +7,8 @@ import {
   PaperAirplaneIcon,
 } from "@heroicons/react/outline";
 
+import Image from "next/image";
+
 function Post({ id, username, userImg, img, caption }) {
   return (
     <div className="">
@@ -22,7 +24,7 @@ function Post({ id, username, userImg, img, caption }) {
       </div>
 
       {/* img */}
-      <img src={img} alt="" />
+      <Image src={img} alt="" width="640" height="480" />
 
       {/* button */}
       <div className="flex justify-between px-4 pt-4">

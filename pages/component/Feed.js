@@ -6,11 +6,13 @@ import Suggestions from "./Suggestions";
 function Feed() {
   return (
     <main className="grid grid-cols-1 md:grid-cols-3 md:max-w-3xl xl:grid-cols-3 xl:max-w-3xl mx-auto mt-4">
-      <section className="col-span-2 sm:flex sm:flex-col justify-self-center">
+      <section className="col-span-2 sm:flex sm:flex-col  justify-self-center">
         {/* Stories */}
         <Stories className="" />
         {/* Posts */}
         <div className="">
+          <Posts className="" />
+          <Posts className="" />
           <Posts className="" />
           <Posts className="" />
           <Posts className="" />
