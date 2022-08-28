@@ -20,10 +20,10 @@ function Header() {
   const router = useRouter();
 
   const { data: session } = useSession();
-  console.log(session);
+  // console.log(session);
 
   return (
-    <div className="shadow-sm w-full big-white sticky top-0 z-58">
+    <div className="shadow-sm w-full bg-white sticky top-0 z-50 rounded-sm">
       <div className="flex justify-between max-w-5xl mx-5 lg:mx-auto">
         <div
           onClick={() => router.push("/")}

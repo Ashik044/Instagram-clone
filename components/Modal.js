@@ -41,7 +41,7 @@ function Modal() {
       timestamp: serverTimestamp(),
     });
 
-    // console.log("🔥🚀🔥🚀", docRef.id);
+    console.log("🔥🚀🔥🚀", docRef.id);
 
     const imageRef = ref(storage, `posts/${docRef.id}/image`);
 
@@ -53,7 +53,7 @@ function Modal() {
         });
       }
     );
-    //console.log(downloadUrl);
+    // console.log(downloadUrl);
     setOpen(false);
     setLoading(false);
     setSelectedFile(null);
