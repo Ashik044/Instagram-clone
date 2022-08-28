@@ -16,15 +16,15 @@ import { useRouter } from "next/router";
 
 function Header() {
   const [open, setOpen] = useRecoilState(modalState);
-  //const open = useRecoilValue(modalState);
+  // const open = useRecoilValue(modalState);
   const router = useRouter();
 
   const { data: session } = useSession();
   console.log(session);
 
   return (
-    <div className="shadow-sm border-b big-white sticky top-0 z-58">
-      <div className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
+    <div className="shadow-sm w-full big-white sticky top-0 z-58">
+      <div className="flex justify-between max-w-5xl mx-5 lg:mx-auto">
         <div
           onClick={() => router.push("/")}
           className="relative hidden lg:inline-grid w-24"
@@ -51,7 +51,7 @@ function Header() {
               <SearchIcon className="h-5 w-5 text-gray-500" />
             </div>
             <input
-              className="bg-gray-50 block w-full pl-10 sm:text-sm border-gray-300 focus:ring-black focus:border-black rounded-md"
+              className="bg-gray-200 block w-full pl-10 sm:text-sm border-gray-100 focus:ring-gray-200 focus:border-gray-100 rounded-md py-2 px-4 "
               type="text"
               placeholder="Search"
             />

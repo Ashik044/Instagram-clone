@@ -6,7 +6,7 @@ import Header from "../../components/Header";
 function signIn({ providers }) {
   return (
     <div className="w-full h-screen">
-      <Header />
+      <Header  />
       <div className="flex flex-col items-center justify-center px-14 text-center scrollbar-hide">
         <img
           className="w-70"
