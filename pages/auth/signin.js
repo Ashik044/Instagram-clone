@@ -13,9 +13,9 @@ function signIn({ providers }) {
           src="https://www.pngmart.com/files/13/Instagram-Logo-PNG-Transparent.png"
           alt=""
         />
-        {/* <p className="font-xs italic">
+        <p className="font-xs italic">
           This is not a Real app, it is build for educational purpose only
-        </p> */}
+        </p>
         <div className="mt-20">
           {Object.values(providers).map((provider) => (
             <div key={provider.name}>
