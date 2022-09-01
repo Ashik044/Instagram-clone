@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
 import { useSession } from "next-auth/react";
 
+import logo from "../assets/Instagram_logo.svg";
+
 import { signIn, signOut } from "next-auth/react";
 
 export default function Home() {
@@ -20,14 +22,26 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/*Header*/}
-      {!session && (
-        <div className={styles.beforeSignin}>
-          <button className={styles.signinBtn} onClick={signIn}>
-            Please Continue to Sign In
-          </button>
+      {/* <Header /> */}
+      <div className={styles.container_full}>
+        <div className={styles.mainPage}>
+          <Image
+            src={logo}
+            alt="instagram logo"
+            height={300}
+            width={300}
+            className={styles.instalogo}
+          />
         </div>
-      )}
+
+        {!session && (
+          <div className={styles.beforeSignin}>
+            <button className={styles.signinBtn} onClick={signIn}>
+              Please Continue to Sign In
+            </button>
+          </div>
+        )}
+      </div>
       {session && <Header />}
 
       {/*Feed*/}

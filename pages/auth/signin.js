@@ -4,7 +4,6 @@ import { getProviders, signIn as signinprovider } from "next-auth/react";
 
 import Image from "next/image";
 import logo from "../../assets/Instagram_logo.svg";
-import Header from "../../components/Header";
 export default function signIn({ providers }) {
   return (
     <>
