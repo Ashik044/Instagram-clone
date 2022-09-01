@@ -37,7 +37,7 @@
     border-radius: 10px;
     padding: 10px;
 
-    width: 160px;
+    width: 180px;
 
     display: flex;
     align-items: center;
@@ -51,8 +51,8 @@
 .Hotbg_btn {
     color: #e84118;
     float: right;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 20%;
     background: #cbcbcb;
     display: flex;
@@ -61,6 +61,8 @@
     transition: 0.4s;
     color: rgb(62, 62, 62);
     cursor: pointer;
+
+    padding-left: 2px;
 }
 
 /* .Hotbg_btn  > i {

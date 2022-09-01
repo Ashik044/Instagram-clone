@@ -49,7 +49,7 @@ function Header() {
             placeholder="Search"
           />
         </div> */}
-
+        {/* Input field */}
         <div className={styles.Hotbg}>
           <input
             onClick={() => setSionOn(!SiconOn)}
@@ -59,7 +59,7 @@ function Header() {
             placeholder="Search >>>"
           />
           <a href="#" className={styles.Hotbg_btn}>
-            <i class="fa fa-search"></i>
+            <MdSearch className={styles.Hotbg_btn} />
           </a>
         </div>
 
