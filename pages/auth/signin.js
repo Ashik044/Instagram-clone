@@ -1,46 +1,46 @@
-/* eslint-disable @next/next/no-typos */
-/* eslint-disable @next/next/no-img-element */
-import { getProviders, signIn as signIntoProvider } from "next-auth/react";
-import Header from "../../components/Header";
+import React from "react";
+import styles from "./signin.module.css";
+import { getProviders, signIn as signinprovider } from "next-auth/react";
 
-function signIn({ providers }) {
+import Image from "next/image";
+import logo from "../../assets/Instagram_logo.svg";
+import Header from "../../components/Header";
+export default function signIn({ providers }) {
   return (
-    <div className="w-full h-screen">
-      <Header  />
-      <div className="flex flex-col items-center justify-center px-14 text-center scrollbar-hide">
-        <img
-          className="w-70"
-          src="https://www.pngmart.com/files/13/Instagram-Logo-PNG-Transparent.png"
-          alt=""
-        />
-        <p className="font-xs italic">
-          This is not a Real app, it is build for educational purpose only
-        </p>
-        <div className="mt-20">
-          {Object.values(providers).map((provider) => (
-            <div key={provider.name}>
-              <button
-                className="p-3 bg-blue-500 rounded-lg text-white"
-                onClick={() =>
-                  signIntoProvider(provider.id, { callbackUrl: "/" })
-                }
-              >
-                Sign in with {provider.name}
-              </button>
-            </div>
-          ))}
+    <>
+      {Object.values(providers).map((provider) => (
+        <div key={provider.name}>
+          <div className={styles.mainPage}>
+            <Image
+              src={logo}
+              alt="instagram logo"
+              height={300}
+              width={300}
+              className={styles.instalogo}
+            />
+            <p className={styles.diclaimer}>
+              This is not real Instagram, This build is for learning purposes
+              only.
+            </p>
+            <p className={styles.developer}>Made by Ashik Reza</p>
+            <button
+              className={styles.signinBtn}
+              onClick={() => signinprovider(provider.id, { callbackUrl: "/" })}
+            >
+              Sign in with {provider.name}
+            </button>
+          </div>
         </div>
-      </div>
-    </div>
+      ))}
+    </>
   );
 }
 
 export async function getServerSideProps() {
   const providers = await getProviders();
-
   return {
-    props: { providers },
+    props: {
+      providers,
+    },
   };
 }
-
-export default signIn;

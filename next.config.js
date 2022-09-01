@@ -8,6 +8,11 @@
 
 module.exports = {
   images: {
-    domains: ["links.papareact.com", "loremflickr.com", "cloudflare-ipfs.com"],
+    domains: [
+      "cloudflare-ipfs.com",
+      "loremflickr.com",
+      "lh3.googleusercontent.com",
+      "firebasestorage.googleapis.com",
+    ],
   },
 };

@@ -10,7 +10,6 @@ export default NextAuth({
     }),
     // ...add more providers here
   ],
-  secret: process.env.NEXTAUTH_SECRET,
   pages: {
     signIn: "/auth/signin",
   },
@@ -20,7 +19,6 @@ export default NextAuth({
         .split(" ")
         .join("")
         .toLocaleLowerCase();
-
       session.user.uid = token.sub;
       return session;
     },
