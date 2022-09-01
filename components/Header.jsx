@@ -38,7 +38,7 @@ function Header() {
 
         {/*Middle*/}
 
-        <div className={styles.search}>
+        {/* <div className={styles.search}>
           <div className={SiconOn ? styles.Searchicon : styles.searchicon}>
             <MdSearch color="#B3B3B3" />
           </div>
@@ -48,6 +48,19 @@ function Header() {
             type="text"
             placeholder="Search"
           />
+        </div> */}
+
+        <div className={styles.Hotbg}>
+          <input
+            onClick={() => setSionOn(!SiconOn)}
+            type="text"
+            name=""
+            className={styles.Hotbg_txt}
+            placeholder="Search >>>"
+          />
+          <a href="#" className={styles.Hotbg_btn}>
+            <i class="fa fa-search"></i>
+          </a>
         </div>
 
         {/*Right*/}
