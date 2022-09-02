@@ -140,7 +140,7 @@ function Posts({ id, postimg, username, userimg, caption }) {
             <div className={styles.likes}>{likes.length} Likes</div>
           )}
           <div className={styles.captionSection}>
-            <div className={styles.username}>pavitra.js</div>
+            <div className={styles.username}>{username}</div>
             <div className={styles.caption}>{caption}</div>
           </div>
 
@@ -149,7 +149,6 @@ function Posts({ id, postimg, username, userimg, caption }) {
             <div className={styles.wholeCommentBox}>
               {CommentArr.map((comts) => {
                 if (comts.data().userImage) {
-
                   return (
                     <div key={comts.id} className={styles.mainCommentbox}>
                       <div className={styles.userimage}>
