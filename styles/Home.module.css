@@ -2,9 +2,28 @@
   padding: 0 0rem;
 }
 
-.container_full {
+.mainPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instalogo {
+
+  width: 300px;
+  height: 40vh;
+}
+
+.beforeSignin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
   width: 100%;
   height: 100vh;
+
+  padding-bottom: 150px;
 
   background: hsla(31, 90%, 76%, 1);
 
@@ -15,19 +34,6 @@
   background: -webkit-linear-gradient(90deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
 
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F9C58D", endColorstr="#F492F0", GradientType=1);
-  
-}
-
-.mainPage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.beforeSignin {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .signinBtn {

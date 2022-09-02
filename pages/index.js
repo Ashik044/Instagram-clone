@@ -23,25 +23,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <Header /> */}
-      <div className={styles.container_full}>
-        <div className={styles.mainPage}>
-          <Image
-            src={logo}
-            alt="instagram logo"
-            height={300}
-            width={300}
-            className={styles.instalogo}
-          />
-        </div>
 
-        {!session && (
-          <div className={styles.beforeSignin}>
-            <button className={styles.signinBtn} onClick={signIn}>
-              Please Continue to Sign In
-            </button>
+      {!session && (
+        <div className={styles.beforeSignin}>
+          <div className={styles.mainPage}>
+            <Image
+              src={logo}
+              alt="instagram logo"
+              height={300}
+              width={300}
+              className={styles.instalogo}
+            />
           </div>
-        )}
-      </div>
+          <button className={styles.signinBtn} onClick={signIn}>
+            Please Continue to Sign In
+          </button>
+        </div>
+      )}
+
       {session && <Header />}
 
       {/*Feed*/}
